@@ -1,0 +1,17 @@
+.header-tabs{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.header-links{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    
+    a{
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
+}
