@@ -1,14 +1,17 @@
 app-header{
-    position:absolute;
+    display:block;
+    position:sticky;
     top: 0px;
-    width:100vw;
     background-color: grey;
+    width:100%
 }
 
 app-footer{
+    display:block;
     position:absolute;
     bottom: 0px;
-    width:100%;
+    background-color: grey;
+    width:100%
 }
 
 div{
