@@ -1,0 +1,23 @@
+.dropdown{
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-closed{
+    display: none;
+}
+
+.dropdown-open{
+    display: block;
+}
+
+.entry:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.transform-caret{
+    transform: rotate(0.5turn);
+}

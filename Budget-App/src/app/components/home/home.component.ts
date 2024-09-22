@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  widgetList: Array<string> = []
+  widgetTypes: Array<string> = ['Goal Progress', 'Net Worth Graph', 'Add Widget']
+  formHidden = true
+  addWidget(widgetType: string){
+    this.widgetList.push(widgetType)
+  }
+
+  openForm(){
+    this.formHidden = false
+  }
 }

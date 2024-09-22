@@ -28,3 +28,23 @@ a:active{
     color: black;
     text-decoration: none;
 }
+
+.main{
+    width:60%
+}
+.background{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    background-color:orange;
+}
+
+.widget{
+    border-radius: 8px;
+    box-shadow: 2px 1px 7px grey;
+    min-height: 200px;
+    min-width: 200px;
+    padding: 2%;
+    margin: 8px;
+}

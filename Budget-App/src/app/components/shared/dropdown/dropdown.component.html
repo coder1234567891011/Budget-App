@@ -1,0 +1,8 @@
+
+<div class="dropdown" (click)="toggleDropdown()" tabindex="0" (keydown.enter)="toggleDropdown()">
+    <div>{{selected}}</div>
+    <img [ngClass]="{'transform-caret' : !dropdownHidden}" height="20px" src="../../../../assets/caret-up.svg">   
+</div>
+<div class="dropdown-closed dropdown" [ngClass]="{'dropdown-open' : !dropdownHidden}">
+    <div class="entry" tabindex="0" *ngFor="let entry of dropdownList" (click)="selectOption(entry)" (keydown.enter)="selectOption(entry)">{{entry}}</div>
+</div>

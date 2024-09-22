@@ -1,12 +1,14 @@
-.background{
-    background-color: coral;
-    height:100%;
-    display:flex;
-    justify-content: center;
-}
-
 .outlet-output{
-    width: 60%;
+    width: 80%;
     height: 100%;
     background-color: white;
+    padding: 2%;
+}
+
+.add-widget{
+    width: min-content;
+    height: min-content;
+    :hover{
+        cursor:pointer;
+    }
 }
