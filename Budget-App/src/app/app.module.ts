@@ -11,6 +11,7 @@ import { BudgetsComponent } from './components/budgets/budgets.component';
 import { AccountsComponent } from './components/accounts/accounts.component';
 import { TransactionsComponent } from './components/transactions/transactions.component';
 import { DropdownComponent } from './components/shared/dropdown/dropdown.component';
+import { WidgetComponent } from './components/shared/widget/widget.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DropdownComponent } from './components/shared/dropdown/dropdown.compone
     BudgetsComponent,
     AccountsComponent,
     TransactionsComponent,
-    DropdownComponent
+    DropdownComponent,
+    WidgetComponent
   ],
   imports: [
     BrowserModule,

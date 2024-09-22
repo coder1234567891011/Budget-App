@@ -7,14 +7,27 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  widgetList: Array<string> = []
-  widgetTypes: Array<string> = ['Goal Progress', 'Net Worth Graph', 'Add Widget']
+  userId = '1143'
+  widgetList: Map<string,string> = new Map<string, string>()
+  widgetTypes: Array<string> = ['Welcome Message', 'Goal Progress', 'Net Worth Graph', 'Add Widget']
   formHidden = true
-  addWidget(widgetType: string){
-    this.widgetList.push(widgetType)
+
+  ngOnInit(){
+    this.addWidget('Welcome Message', this.userId)
+    this.addWidget('Add Widget', this.userId)
+  }
+
+  addWidget(widgetType: string, userId: string){
+    this.widgetList.set(widgetType, userId)
+  }
+
+  deleteWidget(widgetType:string){
+    this.widgetList.delete(widgetType)
   }
 
   openForm(){
     this.formHidden = false
   }
+
+  
 }

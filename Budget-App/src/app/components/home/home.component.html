@@ -1,6 +1,9 @@
 <div class="background">
     <div class="outlet-output">
-        <div class="widget">Welcome to your Budget Home Page!</div>
+        <div class="widget">
+            <div>Welcome to your Budget Home Page!</div>
+            <button (click)="deleteWidget('Welcome Message')"><img height="10px" src="../../../assets/close.svg"></button>
+        </div>
         <div class="widget add-widget" (click)="openForm()">Add Widget<app-dropdown *ngIf="!formHidden" [dropdownList]="widgetTypes"></app-dropdown></div>
     </div>
 </div>
